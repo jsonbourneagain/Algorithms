@@ -1,4 +1,6 @@
-﻿using System; namespace karatsuba {
+﻿using System;
+namespace karatsuba
+{
     class Program
     {
         static void Main(string[] args)
@@ -15,7 +17,7 @@
         static Int32 RecIntMul(int x, int y)
         {
             // If any of the numbers are zero, return 0
-            if(x == 0 || y == 0)
+            if (x == 0 || y == 0)
                 return 0;
 
             // Calculate the number of digits in x & y and take min() of that for computation
