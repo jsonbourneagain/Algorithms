@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/karatsuba/bin/Debug/netcoreapp3.1/karatsuba.dll",
+            "program": "${workspaceFolder}/mergesort/bin/Debug/netcoreapp3.1/mergesort.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/karatsuba",
+            "cwd": "${workspaceFolder}/mergesort",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
