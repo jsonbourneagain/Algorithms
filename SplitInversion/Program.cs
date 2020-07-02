@@ -29,11 +29,11 @@ namespace SplitInversion
             ArrayAndInversion MergeAndCountSplitInversion(ArrayAndInversion left, ArrayAndInversion right)
             {
                 int i = 0, j = 0, splitInversions = 0;
-                int x= left.Arr.Length + right.Arr.Length;
+                int length = left.Arr.Length + right.Arr.Length;
 
-                int[] B = new int[x];
+                int[] B = new int[length];
 
-                for (int k = 0; k < x; k++)
+                for (int k = 0; k < length; k++)
                 {
                     if (i < left.Arr.Length && j < right.Arr.Length)
                     {
@@ -47,7 +47,7 @@ namespace SplitInversion
                         {
                             B[k] = right.Arr[j];
                             j++;
-                            splitInversions += (x/ 2 - i);
+                            splitInversions += (length / 2 - i);
                         }
                     }
                     else if (i < left.Arr.Length && j == right.Arr.Length)
