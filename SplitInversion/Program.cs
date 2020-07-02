@@ -7,7 +7,7 @@ namespace SplitInversion
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[6] { 1, 3, 5, 2, 4, 6 };
+            int[] arr = new int[7] { 1, 3, 7, 5, 2, 4, 6 };
 
             Console.WriteLine(SortAndCountInversion(arr).Inversions);
         }
