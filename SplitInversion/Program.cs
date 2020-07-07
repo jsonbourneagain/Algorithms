@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.IO;
 
 namespace SplitInversion
 {
@@ -7,7 +8,18 @@ namespace SplitInversion
     {
         static void Main(string[] args)
         {
-            int[] arr = new int[7] { 1, 3, 7, 5, 2, 4, 6 };
+
+            int[] arr = new int[100000];
+            string line = default;
+            int i = 0;
+
+            StreamReader file = new StreamReader(@"C:\Users\Lavakesh Pandey\Desktop\Stanford\Code\Algorithms\SplitInversion\IntegerArray.txt");
+
+            while((line = file.ReadLine()) != null){
+                arr[i] = Convert.ToInt32(line.ToString());
+                i++;
+                // System.Console.WriteLine(line);
+            }
 
             Console.WriteLine(SortAndCountInversion(arr).Inversions);
         }
